@@ -25,3 +25,5 @@ Template.registerHelper("usernameFromId", function (userId) {
     return user.username;
 });
 
+Meteor.subscribe('messages');
+Meteor.subscribe('allUsernames');
